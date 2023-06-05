@@ -1,6 +1,6 @@
 # TestConnection JDBC Example
 
-This project contains a simple Java program that connects to a MySQL database using JDBC and retrieves data from the `employee` table.
+This project contains a simple Java program that connects to a MySQL database using JDBC and retrieves data from `employee` table.
 
 ## Setup
 
