@@ -1,30 +1,19 @@
-# TestConnection JDBC Example
+# JDBC Transaction Management
 
-This project contains a simple Java program that connects to a MySQL database using JDBC and retrieves data from `employee` table.
+This repository contains a Java program demonstrating JDBC transaction management. It simulates a money transfer between two bank accounts with a preliminary check for sufficient balance before proceeding with the transaction. Database configuration details are conveniently managed using a `config.properties` file.
 
-## Setup
+## Features
 
-1. Make sure you have a MySQL server instance running.
-2. Set up a database `EmployeeDB` and a table `employee` in your MySQL instance.
-3. Update the database URL, username, and password in the `TestConnection.java` file.
+- JDBC transaction management: If either operation (withdrawal or deposit) fails, the entire transaction is rolled back to maintain data integrity.
 
-## How to Run
+- Balance check: Prior to withdrawing money from an account, the program checks if the account has sufficient funds.
 
-1. Compile the Java file: `javac TestConnection.java`
-2. Run the compiled Java program: `java TestConnection`
+- Properties file configuration: The program uses a `config.properties` file for managing database configuration details, making the program more flexible and easier to configure.
 
-## What the Program Does
+## How to Use
 
-The `TestConnection` program performs the following steps:
+1. Clone the repository to your local machine.
+2. Update the `config.properties` file with your database connection details.
+3. Run the `TestTransaction.java` file in your Java IDE or from the command line.
 
-1. Loads and registers the MySQL JDBC driver.
-2. Establishes a connection with the MySQL database.
-3. Creates a `Statement` object to perform SQL queries.
-4. Executes a SQL SELECT query to retrieve data from the `employee` table.
-5. Prints the retrieved data to the console.
-6. Closes the connection to the database.
-
-## Dependencies
-
-This project requires the MySQL JDBC driver (Connector/J). Make sure to include it in your project's classpath.
-
+Remember, this is a basic implementation and does not handle all edge cases. Please ensure to adapt and expand the code as per your requirements when using it in a production environment.
