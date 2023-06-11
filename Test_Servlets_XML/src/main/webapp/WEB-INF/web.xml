@@ -1,0 +1,10 @@
+<web-app>
+    <servlet>
+        <servlet-name>LifecycleServlet</servlet-name>
+        <servlet-class>myproject.servlets.LifecycleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LifecycleServlet</servlet-name>
+        <url-pattern>/LifecycleServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
